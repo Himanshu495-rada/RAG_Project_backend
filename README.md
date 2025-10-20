@@ -141,13 +141,6 @@ python manage.py runserver
 pytest
 ```
 
-### Code Formatting
-
-```bash
-black .
-flake8 .
-```
-
 ## Production Deployment
 
 1. Set `DEBUG=False` in `.env`
@@ -157,7 +150,3 @@ flake8 .
 5. Use Daphne for WebSockets: `daphne config.asgi:application`
 6. Set up supervisor for Celery workers
 7. Configure nginx as reverse proxy
-
-## License
-
-MIT License
